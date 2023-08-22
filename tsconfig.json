@@ -12,6 +12,10 @@
     "allowJs": true,
     // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "esModuleInterop": true,
     // esModuleInterop позволяет работать с пакетами, которые используют
     // common js как с обычными пакета с помощью import (require() module.export) = common js
@@ -20,7 +24,7 @@
     // console.log(Moment);
     // c флагом результат [object Object]
     // console.log(Moment);
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
     // Если какая-либо библиотека не имеет default import,
     // лоадеры вроде ts-loader или babel-loader автоматически создают их
     // вместо такого импорта
